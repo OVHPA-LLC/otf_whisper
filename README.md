@@ -15,6 +15,23 @@ At present I am using the following packages at their lastest version:
 2. Edit the top of the otf_transcribe.py file.
 3. Launch the script with python.
 
+### 1. install packages and dependencies:
+
+usually I recommend using the `pip3` command with the git repository.
+```
+pip3 install git+https://github.com/guillaumekln/faster-whisper.git
+pip3 install git+https://github.com/Uberi/speech_recognition.git
+```
+The package can later be updated with:
+```
+pip3 install --upgrade --no-deps --force-reinstall git+https://github.com/guillaumekln/faster-whisper.git
+pip3 install --upgrade --no-deps --force-reinstall git+https://github.com/Uberi/speech_recognition.git
+```
+That way should also bring up the correct dependencies.
+
+Just in case make sure that the package for microphone handling are installed: pyaudio and sounddevice (as far as I remember).
+
+
 ### 2. modifications to the script:
 
 2.a. Use a proper model for your microphone:

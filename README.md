@@ -83,7 +83,7 @@ There are several strategies to counter these hallucinations, but most fight on 
 ## License
 
 Dependencies have their own respective licensing.
-Since the base is OpenAI's [whisper](https://github.com/openai/whisper) model and it is released under a MIT license, I will go for the same model for now.
+Since the base is OpenAI's [whisper](https://github.com/openai/whisper) model and it is released under an MIT license, I will go for the same model for now.
 
 otf_whisper is a collection of free script software released under the terms of the MIT license.
 See the [License](LICENSE) file for more details.

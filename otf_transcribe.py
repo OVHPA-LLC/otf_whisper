@@ -37,8 +37,6 @@ def recognize_worker():
 #    (more tunable, and faster...)
     wav_data = BytesIO(audio.get_wav_data())
     wav_data.name = "SpeechRecognition_audio.wav"
-    # for vad_filter one modification is nedded in faster_whisper's vad.py
-    # see issue #118 https://github.com/guillaumekln/faster-whisper/issues/118 
     segments, _ = model.transcribe(wav_data,without_timestamps=True,language=my_language,task=my_task,beam_size=my_beam_size,vad_filter=my_vad_filter)
     for segment in segments:
       print(">>> " + segment.text)

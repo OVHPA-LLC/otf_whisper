@@ -1,5 +1,5 @@
 # otf_whisper
-Some scripts for real-time transcription and translation using whisper model
+Some scripts for real-time transcription and translation using the whisper model.
 
 ## requirements
 At present I am using the following packages at their latest version:

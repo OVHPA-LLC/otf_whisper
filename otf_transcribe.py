@@ -8,7 +8,7 @@ from io import BytesIO
 
 # speech_recognition parameters
 my_noise_duration = 5 # time to sort ambiant noise
-my_phrase_time_limit = 4.5 # the most critical parameter
+my_phrase_time_limit = 15.9 # the most critical parameter
 # initialize speech_recognition
 r = sr.Recognizer()
 audio_queue = Queue()
@@ -19,8 +19,8 @@ audio_queue = Queue()
 my_model_size = "large-v2" # the model is downloaded on first time
 my_language = "ja"
 my_task = "translate"
-my_beam_size = 6 # to limit the number of hallucinations
-my_vad_filter = True # to limit the number of hallucinations
+my_beam_size = 10 # to limit the number of hallucinations
+my_vad_filter = True
 # initialize faster_whisper model
 model = WhisperModel(my_model_size, device="cuda", compute_type="int8_float16")
 
